@@ -12,7 +12,7 @@ export const LoginScreen: React.FC<Props> = ({ onLogin }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const success = await onLogin(inputPassword);
-    if (!success) alert("访问密码错误");
+    if (!success) alert("訪問密碼錯誤");
   };
 
   return (
@@ -22,18 +22,18 @@ export const LoginScreen: React.FC<Props> = ({ onLogin }) => {
           <img src="/favicon.svg" alt="Logo" className="w-16 h-16 drop-shadow-md" />
         </div>
         <h1 className="text-3xl font-bold text-white mb-2 tracking-tight">{DEFAULT_SITE_TITLE}</h1>
-        <p className="text-gray-400 mb-8 text-center">访问受限，请验证身份。</p>
+        <p className="text-gray-400 mb-8 text-center">訪問受限，請驗證身份。</p>
         <form onSubmit={handleSubmit} className="w-full space-y-4">
           <GlassInput 
             type="password" 
-            placeholder="请输入访问密码" 
+            placeholder="請輸入訪問密碼" 
             value={inputPassword} 
             onChange={(e) => setInputPassword(e.target.value)} 
             className="text-center tracking-widest"
           />
-          <GlassButton type="submit" className="w-full py-3">进入系统</GlassButton>
+          <GlassButton type="submit" className="w-full py-3">進入系統</GlassButton>
         </form>
-        <div className="mt-8 text-xs text-gray-500">基于 Cloudflare Pages & KV 构建</div>
+        <div className="mt-8 text-xs text-gray-500">基於 Cloudflare Pages & KV 構建</div>
       </GlassCard>
     </div>
   );
