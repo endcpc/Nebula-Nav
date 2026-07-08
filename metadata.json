@@ -1,5 +1,5 @@
 {
-  "name": "Nebula Nav",
-  "description": "基于 Cloudflare Pages 和 KV 构建的未来风导航页。支持 Vite 构建、React 前端以及服务端 Functions 处理 API 和重定向逻辑。",
+  "name": "KICKCCP Nav",
+  "description": "基於 Cloudflare Pages 和 KV 構建的未來風導航頁。支持 Vite 構建、React 前端以及服務端 Functions 處理 API 和重定向邏輯。",
   "requestFramePermissions": []
 }
